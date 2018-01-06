@@ -5,7 +5,7 @@ from frappe import _
 def get_data():
 	return [
 		{
-			label": _("Installation Management"),
+			"label": _("Installation Management"),
 			"items": [
 				{
 					"type": "doctype",
