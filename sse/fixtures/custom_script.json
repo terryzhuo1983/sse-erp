@@ -1,0 +1,20 @@
+[
+ {
+  "docstatus": 0, 
+  "doctype": "Custom Script", 
+  "dt": "Quotation", 
+  "modified": "2018-01-05 20:55:30.103797", 
+  "name": "Quotation-Client", 
+  "script": "frappe.ui.form.on(\"Quotation\", \"deposit_required\", function(frm) {\n  frm.set_value(\"balance_due\", flt(frm.doc.total) - flt(frm.doc.deposit_required));\n});", 
+  "script_type": "Client"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Custom Script", 
+  "dt": "Sales Order", 
+  "modified": "2018-01-06 01:17:22.947046", 
+  "name": "Sales Order-Client", 
+  "script": "frappe.ui.form.on(\"Sales Order\", \"deposit_required\", function(frm) {\n  frm.set_value(\"balance_due\", flt(frm.doc.total) - flt(frm.doc.deposit_required));\n});", 
+  "script_type": "Client"
+ }
+]

@@ -11,6 +11,8 @@ app_color = "red"
 app_email = "terryzhuo@skysolarenergy.com.au"
 app_license = "MIT"
 
+fixtures = ["Custom Field", "Custom Script", "Property Setter", "Print Format"]
+
 # Includes in <head>
 # ------------------
 
